@@ -1,0 +1,63 @@
+@charset "UTF-8";
+/* Variables */
+/* Estilo global */
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+/* Encabezado */
+header {
+  background-color: #4CAF50;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Títulos */
+h1, h2 {
+  font-family: "Helvetica", sans-serif;
+  font-weight: normal;
+}
+
+/* Galería de imágenes */
+.image-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+/* Imagen dentro de la galería */
+.gallery-image {
+  width: 300px;
+  height: auto;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+.gallery-image:hover {
+  transform: scale(1.05);
+}
+
+/* Estilos para el título de la galería */
+h2 {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 1.8rem;
+  color: #4CAF50;
+}
+
+/* Media queries para pantallas más pequeñas */
+@media (max-width: 768px) {
+  .image-gallery {
+    flex-direction: column;
+    align-items: center;
+  }
+  .gallery-image {
+    width: 80%;
+  }
+}/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,71 @@
+/* Variables */
+$primary-color: #4CAF50;
+$secondary-color: #333;
+$background-color: #f4f4f4;
+$font-family: 'Arial', sans-serif;
+$heading-font: 'Helvetica', sans-serif;
+$gallery-spacing: 20px;
+
+/* Estilo global */
+body {
+    font-family: $font-family;
+    background-color: $background-color;
+    color: $secondary-color;
+    margin: 0;
+    padding: 0;
+}
+
+/* Encabezado */
+header {
+    background-color: $primary-color;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Títulos */
+h1, h2 {
+    font-family: $heading-font;
+    font-weight: normal;
+}
+
+/* Galería de imágenes */
+.image-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: $gallery-spacing;
+    margin-top: 20px;
+}
+
+/* Imagen dentro de la galería */
+.gallery-image {
+    width: 300px;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+
+    &:hover {
+        transform: scale(1.05);
+    }
+}
+
+/* Estilos para el título de la galería */
+h2 {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 1.8rem;
+    color: $primary-color;
+}
+
+/* Media queries para pantallas más pequeñas */
+@media (max-width: 768px) {
+    .image-gallery {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .gallery-image {
+        width: 80%;
+    }
+}
