@@ -1,1 +1,0 @@
-console.log("Hola desde script2.js");

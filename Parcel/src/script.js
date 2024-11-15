@@ -1,1 +1,0 @@
-console.log("Hola! Desde la consola");
